@@ -1,14 +1,9 @@
-boletim=[]
-while True:
-        nome=str(input('Digite seu nome: ')).strip().capitalize()
-        nota1=float(input('Digite sua primeira nota: '))
-        nota2=float(input('Digite sua segunda nota: '))
-        média=(nota1+nota2)/2
-        boletim.append([nome, [nota1, nota2], média])
-        resp=str(input('Quer continuar? [S/N] '))
-        if resp in 'Nn':
-            break
-print(boletim, end='')
-print()
-
-
+n1=float(input('Qual sua primeira nota?'))
+n2=float(input('Qual sua segunda nota?'))
+m=float((n1+n2)/2)
+if m>=7:
+    print('Parabéns você passou de ano, com média {}!'.format(m))
+elif m>5 and m<6,9 :
+    print('Voce está de recuperação, e sua média ficou {}.'.format(m))
+elif m<5,0:
+    print('Você está   brovado, com média {}.'.format(m))
